@@ -1,0 +1,548 @@
+html, body {font-family: Georgia}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+mark {background-color: white}
+
+.f10 {font-size: 0.625rem}
+.f12 {font-size: 0.75rem}
+.f13 {font-size: 0.8125rem}
+.f14 {font-size: 0.875rem}
+.f16 {font-size: 1rem}
+.f18 {font-size: 1.125rem}
+.f22 {font-size: 1.375rem}
+.f26 {font-size: 1.625rem}
+.f36 {font-size: 2.25rem}
+
+.lh1 {line-height: 1}
+.lh1-2 {line-height: 1.2}
+.lh1-5 {line-height: 1.5}
+.lh1-7 {line-height: 1.7}
+
+.clr50 {color: #505050}
+.clr66 {color: #666666}
+.clr33 {color: #333333}
+.clr38 {color: #383838}
+.clr97 {color: #979797}
+.clr98 {color: #989898}
+.clr99 {color: #999999}
+.clr9f {color: #9f9f9f}
+.clr2e {color: #2e2e2e}
+.clre6 {color: #e6e6e6}
+.clrpurple {color: #97455f}
+.bgclrpurple {background-color: #97455f}
+.bgclreb {background-color: #ebebeb}
+
+.mt-10 {margin-top: 0.625rem}
+.mt-30 {margin-top: 1.875rem}
+.mt-40 {margin-top: 2.5rem}
+.mb-04 {margin-bottom: 0.25rem}
+.mb-10 {margin-bottom: 0.625rem}
+.mb-14 {margin-bottom: 0.875rem}
+.mb-18 {margin-bottom: 1.125rem}
+.mb-20 {margin-bottom: 1.25rem}
+.mb-30 {margin-bottom: 1.875rem}
+.mb-40 {margin-bottom: 2.5rem}
+.mb-50 {margin-bottom: 3.125rem}
+.mr-10 {margin-right: 0.625rem}
+.px-50 {padding-left: 3.125rem; padding-right: 3.125rem}
+.pt-18 {padding-top: 1.125rem}
+.pr-18 {padding-right: 1.125rem}
+.pt-30 {padding-top: 1.875rem}
+.pt-40 {padding-top: 2.5rem}
+.pb-42 {padding-bottom: 2.5rem}
+.pb-60 {padding-bottom: 3.75rem}
+
+
+/*------ Top Bar ------*/
+
+#topBar a:hover {text-decoration: none}
+
+.socials a {margin-right: 0.625rem;} /*margin hna 3shan law 3nd .fab,.fas el margine hayb2a link*/
+
+.fab, .fas {
+	font-size: 1rem;
+	padding: 0.5em;
+	color: white;
+	background-color: #d2d2d2;
+	border-radius: 50%;
+}
+
+.fa-linkedin:hover {background-color: #0e76a8}
+.fa-twitter:hover {background-color: #00acee}
+.fa-pinterest:hover {background-color: #c8232c}
+.fa-google-plus:hover {background-color: #db4a39}
+.fa-rss:hover {background-color: #ee802f}
+
+.signups a {
+	font-size: 0.75rem;
+	color: #97455f;
+}
+
+.bb {border-bottom: 1px solid #97455f}
+
+.btn-primary {
+	color: white;
+	background-color: #97455f;
+	border-color: #97455f;
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: #823e53;
+  border-color: #823e53;
+}
+
+.btn-primary:focus, .btn-primary.focus {
+  box-shadow: 0 0 0 0.2rem rgba(151, 69, 95, 0.5);
+}
+
+.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
+.show > .btn-primary.dropdown-toggle {
+  color: #fff;
+  background-color: #77384c;
+  border-color: #77384c;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus,
+.show > .btn-primary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(119, 56, 76, 0.5);
+}
+
+.btn .fas {
+	font-size: 0.6875rem;
+	padding: 7px 10px;
+	color: white;
+	background-color: transparent;
+}
+
+.topbar-toggler {
+	position: absolute;
+	right:15px;
+	padding: 0 0.625rem;
+	border-radius: 0 0 0.25rem 0.25rem;
+	z-index: 1000;
+}
+
+.topbar-toggler:focus, .topbar-toggler.focus {box-shadow: none;}
+
+.topbar-toggler:not(:disabled):not(.disabled):active:focus, .topbar-toggler:not(:disabled):not(.disabled).active:focus,
+.show > .topbar-toggler.dropdown-toggle:focus {box-shadow: none;}
+
+.brand {
+	font-size: 1.625rem;
+	color: #333333;
+}
+
+.brand:hover {
+	color: #131313;
+	text-decoration: none;
+}
+
+.brand h2::first-letter {font-size: 2.25rem}
+
+
+/*------ Header ------*/
+
+.border-left {border-left: 1px solid #999999 !important;}
+
+.btn-search {
+	padding: 0.66em 1em;
+	border-radius: 0;
+}
+
+#header .form-control {
+	width: auto;
+	height: 2.25rem;
+	padding: 0.66em 1em;
+	border: none;
+	border-radius: 0;
+}
+
+#header .form-control:focus {
+	color: #333333;
+	box-shadow: 0 0 0 0.2rem rgba(151, 69, 95, 0.5);
+}
+
+#header .form-control::placeholder {color: #999999;}
+
+#header .navbar-nav li a {padding: 1rem;}
+#header .navbar-nav li a:hover {background-color: #6a3144;}
+#header .navbar-nav li:first-child a:hover {border-radius: 0.25rem 0 0 0} /* NICE :) */
+
+#header .navbar-nav .dropdown .dropdown-menu {background-color: #cb879c;}
+
+#header .navbar-nav .dropdown .dropdown-menu .dropdown-item {
+    padding: 0.5rem 1.5rem;
+    clear: both;
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: #212529;
+}
+
+#header .navbar-nav .dropdown .dropdown-menu .dropdown-item:hover {color: white}
+
+
+/*------ Slider ------*/
+
+/*ol*/.carousel-indicators {
+    position: absolute;
+    right: 0;
+    bottom: -30px;
+    left: 0;
+    z-index: 15;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-left: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.carousel-indicators li {
+    position: relative;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: rgba(51, 51, 51, 1);
+}
+
+.carousel-indicators .active {
+	border: 3px solid #333333;
+  	background-color: #fff;
+}
+
+.carousel-caption {
+	opacity: 0;
+  	width: 455px; height: 115px;
+  	position: absolute;
+  	right: 11px; left: auto;
+  	bottom: 28px;
+  	z-index: 10;
+  	padding-top: 10px;
+  	padding-bottom: 10px;
+  	color: #fff;
+  	background-color: rgba(173, 173, 173, 0.68);
+  	text-align: center;
+  	transition: opacity .5s ease-in, background-color .25s ease-in;
+}
+
+.active .carousel-caption {opacity: 1}
+.active .carousel-caption:hover {background-color: white}
+
+
+
+/*------ Content ------*/
+
+.center-title {
+	position: relative;
+	text-align: center;
+	font-size: 0.8125rem;
+	margin: 0 auto;
+	color: #333333;
+	z-index: 100;
+	box-sizing: border-box;
+}
+
+.center-title-line {
+	position: absolute;
+	top: 50%;
+  	transform: translateY(-50%);
+  	left: 0; right: 0;
+	height: 5px;
+	background-color: #ebebeb;
+	z-index: 50;
+	text-align: center;
+}
+
+#content .row1 .media-body h5 {
+	font-size: 1rem;
+	color: #97455f;
+}
+
+#content .media-body p {
+	font-size: 0.8125rem;
+	margin-bottom: 0;
+	color: #999999;
+}
+
+#content .row2 .media-body h5 {
+	font-size: 1rem;
+	color: #333333;
+}
+
+#content .row2 .media-body p {
+	margin-bottom: 0.625rem;
+}
+
+#content .media-body a {
+	font-size: 0.8125rem;
+	margin-top: 0;
+	color: #97455f;
+}
+
+blockquote {
+    position: relative;
+    padding: 0.35em 40px;
+    margin-bottom: 0.25rem;
+}
+
+blockquote:before {
+    display: block;
+    padding-left: 10px;
+    content: "\201C";
+    font-size: 10.2rem;
+    position: absolute;
+    left: -1.0625rem;
+    top: -50px;
+    color: #d4d4d4;
+}
+
+blockquote cite {
+    color: #d4d4d4;
+    font-size: 14px;
+    display: block;
+    margin-top: 5px;
+}
+
+blockquote cite:before {
+    content: "\2014 \2009";
+}
+
+.td-n:hover {text-decoration: none}
+
+input::placeholder {color: #ba2e1f;}
+
+footer {
+	font-size: 0.75rem;
+	color: #919191;
+}
+
+
+
+/*------ Shout ------*/
+
+.jumbotron {
+	padding: 1rem;
+	border-radius: 0.5rem;
+	color: #e5e5e5;
+	background-color: #97455f;
+}
+
+.jumbotron h1 {
+	font-size: 1.75rem;
+}
+
+.jumbotron p {
+	font-size: 0.9rem;
+	margin-bottom: 0;
+}
+
+.btn-jumbotron {
+	font-size: 1.625rem;
+	padding:0.38em;
+	border-radius: 0.5rem;
+	color: #97455f;
+	background-color: white;
+	border-color: white;
+}
+
+.btn-jumbotron:hover {color: #97455f}
+
+.btn-jumbotron:focus, .btn-jumbotron.focus {
+  box-shadow: none;
+}
+
+.btn-jumbotron.disabled, .btn-jumbotron:disabled {
+  color: #97455f;
+  background-color: white;
+  border-color: white;
+}
+
+.btn-jumbotron:not(:disabled):not(.disabled):active, .btn-jumbotron:not(:disabled):not(.disabled).active,
+.show > .btn-jumbotron.dropdown-toggle {
+  color: #fff;
+  background-color: #77384c;
+  border-color: #77384c;
+}
+
+.btn-jumbotron:not(:disabled):not(.disabled):active:focus, .btn-jumbotron:not(:disabled):not(.disabled).active:focus,
+.show > .btn-jumbotron.dropdown-toggle:focus {
+  box-shadow: none;
+}
+
+
+
+/*------ Footer ------*/
+
+.footer-border {
+	border-top: 5px solid #d2d2d2;
+}
+
+#footer h3 {
+	font-size: 1rem;
+	margin-bottom: 1rem;
+	color: #333333;
+}
+
+#footer .row1 .media-body h5 {
+	font-size: 1rem;
+	color: #97455f;
+}
+
+#footer p {
+	font-size: 0.75rem;
+	margin-bottom: 0;
+	color: #999999;
+}
+
+#footer .media-body p {
+	font-size: 0.75rem;
+	margin-bottom: 0;
+	color: #999999;
+}
+
+#footer .form-control {
+    height: calc(2.0rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 0.8125rem;
+    line-height: 1.5;
+    background-color: #fff;
+    border: 1px solid #fff;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+#footer .form-control:focus {
+  color: #333333;
+  background-color: #fff;
+  border-color: #fff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(151, 69, 95, 0.5);
+}
+
+#footer .form-control::-webkit-input-placeholder {
+  color: #989898;
+  opacity: 1;
+}
+
+#footer .form-control::-moz-placeholder {
+  color: #989898;
+  opacity: 1;
+}
+
+#footer .form-control:-ms-input-placeholder {
+  color: #989898;
+  opacity: 1;
+}
+
+#footer .form-control::-ms-input-placeholder {
+  color: #989898;
+  opacity: 1;
+}
+
+#footer .form-control::placeholder {
+  color: #989898;
+  opacity: 1;
+}
+
+#footer .form-control:disabled, #footer .form-control[readonly] {
+  background-color: #e9ecef;
+  opacity: 1;
+}
+
+#footer .btn {
+    border: 1px solid transparent;
+    padding: 0.3rem 0.7rem;
+    font-size: 0.8125rem;
+}
+
+
+/*------ Copyright ------*/
+
+#copyright .container-fluid {
+	border-top: 1px solid #bcbcbc;
+}
+
+
+
+/*------ Media Queries ------*/
+
+/* I know its a little messy .. may be next time I'll arrange it better */
+	
+@media (min-width: 576px) {
+	.px-sm-50 {
+		padding-left: 3.125rem !important; padding-right: 3.125rem !important;
+	}
+}
+
+@media (min-width: 768px) {
+
+	.jumbotron h1 {
+		font-size: 2.25rem;
+	}
+
+	.jumbotron p {
+		font-size: 1.25rem
+	}
+
+	#header .navbar-nav li a {
+		padding-left: 0.75rem !important;
+		padding-right: 0.75rem !important;
+	}
+  
+}
+
+@media (min-width: 992px) {
+	#header .navbar-nav li a {
+		padding-left: 1rem !important;
+		padding-right: 1rem !important;
+	}
+}
+
+@media (min-width: 1200px) {...}
+
+
+
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+	#header .brand h2 {
+		font-size: 2rem !important;
+	}
+
+	#header .border-left {
+		border-left: 0 !important;
+		margin-left: 15px;
+	}
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+		
+		.btn-jumbotron {
+		font-size: 1rem;
+	}
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) { ... }
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) { ... }
